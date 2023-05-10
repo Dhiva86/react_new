@@ -1,5 +1,6 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
+import useState from "react";
 
 const data=[{
       productImage :" https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-15-9520/media-gallery/black/laptop-xps-9520-t-black-gallery-4.psd?fmt=pjpg&pscan=auto&scl=1&wid=3491&hei=2077&qlt=100,1&resMode=sharp2&size=3491,2077&chrss=full&imwidth=5000",
@@ -21,12 +22,11 @@ const data=[{
   productName: "LED TV",
   productPrice:70000
 },
-
-
 ]
 
+
 function App() {
-   const [cartCount,setCartCount] = useState(0);
+   const [cartCount,setCartCount] = useState(0)
   return (
     <div className="App">
       <h1>Cart 0</h1>
@@ -46,12 +46,12 @@ function App() {
     </div>
   );
 }
-function ProductCard(productName,productImage,productPrice){
+function ProductCard(productName,productImage,productPrice,cartCount,setCartCount){
   const [show, setShow] = useState(true);
 
   const handleAddToCard = ()=>{
      setShow(!show)
-     setCartCount(cartCount+1)
+     setCartCount( cartCount+1)
   }
   const handleRemoveToCard = ()=>{
     setShow(!show)
