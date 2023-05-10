@@ -14,7 +14,7 @@ const data=[{
 {
   productImage :"https://itronics.in/wp-content/uploads/2021/09/iphone-13-select-2021.jpeg",
   productName: "Apple i7",
-  productPrice:100000
+  productPrice:10000
 },
 {
   productImage :"https://m.media-amazon.com/images/I/81oHGrH1PwL._SL1500_.jpg",
