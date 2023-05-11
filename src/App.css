@@ -24,7 +24,4 @@ object-fit: cover;
   display: flex;
   flex-wrap: wrap;
 }
-button{
-  background-color: blue;
-  margin-top: 2px;
-}
+
